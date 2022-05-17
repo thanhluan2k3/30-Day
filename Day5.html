@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background: linear-gradient(to right, #b8fabd, #a0e1da);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-box{
+            background: #000;
+            width: 70px;
+            height: 70px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 17px;
+            transition: all 0.5s ease;
+        }
+        .search-box__input{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            color: white;
+            padding: 20px 100px 20px 20px;
+            font-size: 35px;
+            outline: none;
+        }
+        .search-box__btn{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 70px;
+            height: 70px;
+            font-size: 25px;
+            border: none;
+            outline: none;
+        }
+        .search-box.open{
+            width: 400px;
+        }
+    </style>
+    <div class="search-box">
+    <input class="search-box__input" type="text">
+    <button class="search-box__btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
